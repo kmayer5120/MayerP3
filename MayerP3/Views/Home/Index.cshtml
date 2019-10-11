@@ -1,6 +1,6 @@
 ﻿@model InvestmentCalc
 @{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Investment Calculator";
 }
 
 <h2>Investment Calculator</h2>
@@ -10,11 +10,10 @@
     The user input view should provide input fields to get the starting Principle,
     Interest, Years of the loan and number of compounds per year.
 -->
-
 @using (Html.BeginForm("Summary", "Home", "post"))
 {
 
-    <legend> Menu </legend>
+    <legend> Please enter the following information to calculate the future value of an investment: </legend>
     <p>@Html.Label("Principle", "Principle", new { id = "lblPrinciple" })</p>
     <p>@Html.Editor("principle")</p>
     <p>@Html.Label("Interest",  "Interest",new { id = "lblInterest" })</p>
