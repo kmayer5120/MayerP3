@@ -1,0 +1,30 @@
+﻿@model InvestmentCalc
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h2>Investment Calculator</h2>
+
+
+<!--
+    The user input view should provide input fields to get the starting Principle,
+    Interest, Years of the loan and number of compounds per year.
+-->
+
+@using (Html.BeginForm("Summary", "Home", "post"))
+{
+
+    <legend> Menu </legend>
+    <p>@Html.Label("Principle", "Principle", new { id = "lblPrinciple" })</p>
+    <p>@Html.Editor("principle")</p>
+    <p>@Html.Label("Interest",  "Interest",new { id = "lblInterest" })</p>
+    <p>@Html.Editor("interest")</p>
+    <p>@Html.Label("Years",  "Years",new { id = "lbYears" })</p>
+    <p>@Html.Editor("years")</p>
+    <p>@Html.Label("CmpPerYr",  "Compounds Per Year",new { id = "lblCmpPerYr" })</p>
+    <p>@Html.Editor("cmpPerYr")</p>
+    <div> </div>
+    <p>@Html.ValidationSummary()</p>
+    <button type="submit">Submit</button>
+}
+
