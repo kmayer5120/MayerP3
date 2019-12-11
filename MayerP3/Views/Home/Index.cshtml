@@ -14,14 +14,15 @@
 {
 
     <legend> Please enter the following information to calculate the future value of an investment: </legend>
+    //TODO: -5 added ValidationMessages. RJG
     <p>@Html.Label("Principle", "Principle", new { id = "lblPrinciple" })</p>
-    <p>@Html.Editor("principle")</p>
+    <p>@Html.Editor("principle")@Html.ValidationMessage("principle")</p>
     <p>@Html.Label("Interest",  "Interest",new { id = "lblInterest" })</p>
-    <p>@Html.Editor("interest")</p>
+    <p>@Html.Editor("interest")@Html.ValidationMessage("interest")</p>
     <p>@Html.Label("Years",  "Years",new { id = "lbYears" })</p>
-    <p>@Html.Editor("years")</p>
+    <p>@Html.Editor("years")@Html.ValidationMessage("years")</p>
     <p>@Html.Label("CmpPerYr",  "Compounds Per Year",new { id = "lblCmpPerYr" })</p>
-    <p>@Html.Editor("cmpPerYr")</p>
+    <p>@Html.Editor("cmpPerYr")@Html.ValidationMessage("cmpPerYr")</p>
     <div> </div>
     <p>@Html.ValidationSummary()</p>
     <button type="submit">Submit</button>

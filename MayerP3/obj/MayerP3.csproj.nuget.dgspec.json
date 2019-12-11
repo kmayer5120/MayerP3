@@ -1,24 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "D:\\MEGA\\cis\\cis_2284\\MayerP3\\MayerP3\\MayerP3.csproj": {}
+    "C:\\Users\\rgarn\\Source\\Repos\\MayerP3\\MayerP3\\MayerP3.csproj": {}
   },
   "projects": {
-    "D:\\MEGA\\cis\\cis_2284\\MayerP3\\MayerP3\\MayerP3.csproj": {
+    "C:\\Users\\rgarn\\Source\\Repos\\MayerP3\\MayerP3\\MayerP3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MEGA\\cis\\cis_2284\\MayerP3\\MayerP3\\MayerP3.csproj",
+        "projectUniqueName": "C:\\Users\\rgarn\\Source\\Repos\\MayerP3\\MayerP3\\MayerP3.csproj",
         "projectName": "MayerP3",
-        "projectPath": "D:\\MEGA\\cis\\cis_2284\\MayerP3\\MayerP3\\MayerP3.csproj",
-        "packagesPath": "C:\\Users\\Kyle\\.nuget\\packages\\",
-        "outputPath": "D:\\MEGA\\cis\\cis_2284\\MayerP3\\MayerP3\\obj\\",
+        "projectPath": "C:\\Users\\rgarn\\Source\\Repos\\MayerP3\\MayerP3\\MayerP3.csproj",
+        "packagesPath": "C:\\Users\\rgarn\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rgarn\\Source\\Repos\\MayerP3\\MayerP3\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Kyle\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\rgarn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.1"
@@ -64,10 +66,16 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

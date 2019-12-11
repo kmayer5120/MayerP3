@@ -36,8 +36,11 @@ namespace MayerP3.Controllers
             else
             {
                 ViewData["Info"] = "Inputs are invalid.";
+                //TODO: -5 need to go back to Index view and pass model if not valid.
+                return View("Index", inv);
             }
-            return View();
+            //TODO: -5 need to pass model to Summary view
+            return View(inv);
         }
 
         public IActionResult Contact()
